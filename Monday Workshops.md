@@ -44,9 +44,10 @@ Q. Most common error that early career folks do
 - self-awareness, being nervous about asking people questions - "wasting people's time as much as possible" - its up to you to stop people in the hallway and ask them questions and learn
 - don't assume people know what you are talking about -- don't get into the weeds immediately, take a beat to set the context, why is it important, don't lose them in jargon
 - **communication is important** 
-
 #### Building Your Toolkit
 Will Killian, NVIDIA
+
+
 
 
 #### Navigating Interviews
