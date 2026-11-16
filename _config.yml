@@ -11,4 +11,4 @@ plugins:
 defaults:
   - scope: { path: "" }
     values: { layout: note }
-exclude: [README.md, Gemfile, Gemfile.lock, vendor, sync-attachments.ps1]
+exclude: [sc26_logos@4x, README.md, Gemfile, Gemfile.lock, vendor, sync-attachments.ps1]

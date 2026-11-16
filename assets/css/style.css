@@ -1,11 +1,32 @@
-:root{--bg:#fff;--fg:#1f2328;--muted:#656d76;--line:#d0d7de;--link:#0969da}
-@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e6edf3;--muted:#8d96a0;--line:#30363d;--link:#58a6ff}}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+:root{
+  --bg:#ffffff; --surface:#f6f8fb; --fg:#14171f; --muted:#5b6475; --line:#dde3ec;
+  --link:#1f6fc2; --accent:#f7943a; --pink:#f0338f; --blue:#3a93db; --green:#78a24f;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#0b0d12; --surface:#141821; --fg:#eef1f6; --muted:#97a0b3; --line:#262c3a;
+  --link:#5eb0f5;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif;
+  border-top:6px solid transparent;border-image:linear-gradient(90deg,var(--accent) 0 25%,var(--pink) 25% 50%,var(--blue) 50% 75%,var(--green) 75%) 1}
 main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
-a{color:var(--link)}
-nav{margin:8px 0 16px}
-table{border-collapse:collapse;width:100%}
-th,td{border:1px solid var(--line);padding:8px 12px;text-align:left}
-th{color:var(--muted);font-weight:600}
+a{color:var(--link);text-underline-offset:3px}
+a:hover{color:var(--pink)}
+nav{margin:8px 0 16px;font-weight:600}
+.hero{text-align:center;padding:16px 0 8px}
+.hero img{max-width:min(332px,80%);height:auto}
+.hero h1{border:0;margin:.4em 0 .6em;font-size:1.5rem;letter-spacing:.02em}
+table{border-collapse:separate;border-spacing:0;width:100%;background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:12px 16px;text-align:left}
+th{color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:3px solid var(--accent)}
+td{border-top:1px solid var(--line)}
+tbody tr:first-child td{border-top:0}
+tbody tr:hover td{background:color-mix(in srgb,var(--blue) 10%,transparent)}
+td a{font-weight:600;text-decoration:none;display:block}
 img{max-width:100%;height:auto}
-h1{border-bottom:1px solid var(--line);padding-bottom:.3em}
+article h1{border-bottom:3px solid var(--pink);padding-bottom:.3em}
+article h2,article h3,article h4{margin-top:1.6em}
+article h3{border-left:4px solid var(--blue);padding-left:.5em}
+article h4{border-left:4px solid var(--green);padding-left:.5em}
+blockquote{border-left:4px solid var(--accent);margin-left:0;padding-left:1em;color:var(--muted)}
+code{background:var(--surface);padding:.1em .35em;border-radius:4px}

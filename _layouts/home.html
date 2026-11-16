@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
-<h1>{{ site.title }}</h1>
+<header class="hero">
+  <picture>
+    <source srcset="{{ '/assets/img/logo-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+    <img src="{{ '/assets/img/logo-light.png' | relative_url }}" alt="SC26 Chicago, IL — hpc unites." width="332" height="156">
+  </picture>
+  <h1>{{ site.title }} Notes</h1>
+</header>
 <table>
 <thead><tr><th>Notes</th></tr></thead>
 <tbody>
