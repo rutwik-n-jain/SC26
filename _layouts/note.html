@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<nav><a href="{{ '/' | relative_url }}">&larr; {{ site.title }}</a></nav>
+<article>
+<h1>{{ page.name | remove: ".md" }}</h1>
+{{ content }}
+</article>
+<nav><a href="{{ '/' | relative_url }}">&larr; Back to {{ site.title }}</a></nav>

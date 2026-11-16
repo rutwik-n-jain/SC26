@@ -1,0 +1,14 @@
+title: SC26
+description: Notes from SC26
+baseurl: "/SC26"
+url: "https://rutwik-n-jain.github.io"
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+plugins:
+  - jekyll-optional-front-matter
+defaults:
+  - scope: { path: "" }
+    values: { layout: note }
+exclude: [README.md, Gemfile, Gemfile.lock, vendor, sync-attachments.ps1]

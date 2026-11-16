@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<h1>{{ site.title }}</h1>
+<table>
+<thead><tr><th>Notes</th></tr></thead>
+<tbody>
+{% assign notes = site.pages | where: "extname", ".md" | sort: "name" %}
+{% for n in notes %}{% if n.url != "/" %}
+<tr><td><a href="{{ n.url | relative_url }}">{{ n.name | remove: ".md" }}</a></td></tr>
+{% endif %}{% endfor %}
+</tbody>
+</table>
